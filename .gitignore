@@ -2,4 +2,13 @@ node_modules
 build
 npm-debug.log
 config.js
+zos.local.json
+zos.development.json
+
+.openzeppelin/.session
+
+.idea/
+
+secrets.json
+
 package-lock.json

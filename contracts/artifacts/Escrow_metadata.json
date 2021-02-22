@@ -1,0 +1,411 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_jobId",
+						"type": "string"
+					},
+					{
+						"name": "_tokens",
+						"type": "uint256"
+					}
+				],
+				"name": "fundJob",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"name": "_renderTokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_jobId",
+						"type": "string"
+					}
+				],
+				"name": "jobBalance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "disbursalAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_jobId",
+						"type": "string"
+					},
+					{
+						"name": "_recipients",
+						"type": "address[]"
+					},
+					{
+						"name": "_amounts",
+						"type": "uint256[]"
+					}
+				],
+				"name": "disburseJob",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newDisbursalAddress",
+						"type": "address"
+					}
+				],
+				"name": "changeDisbursalAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_newRenderTokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "changeRenderTokenAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "contractName",
+						"type": "string"
+					},
+					{
+						"name": "migrationId",
+						"type": "string"
+					}
+				],
+				"name": "isMigrated",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "renderTokenAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "disbursalAddress",
+						"type": "address"
+					}
+				],
+				"name": "DisbursalAddressUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "_jobId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "_balance",
+						"type": "uint256"
+					}
+				],
+				"name": "JobBalanceUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "renderTokenAddress",
+						"type": "address"
+					}
+				],
+				"name": "RenderTokenAddressUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "contractName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "migrationId",
+						"type": "string"
+					}
+				],
+				"name": "Migrated",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"changeDisbursalAddress(address)": {
+					"details": "Change the address authorized to distribute tokens for completed jobs\r    * Because there are no on-chain details to indicate who performed a render, an outside\r system must call the disburseJob function with the information needed to properly\r distribute tokens. This function updates the address with the authority to perform distributions\r",
+					"params": {
+						"_newDisbursalAddress": "see disbursalAddress\r"
+					}
+				},
+				"changeRenderTokenAddress(address)": {
+					"details": "Change the address allowances will be sent to after job completion\r    * Ideally, this will not be used, but is included as a failsafe.\r RNDR is still in its infancy, and changes may need to be made to this\r contract and / or the renderToken contract. Including methods to update the\r addresses allows the contracts to update independently.\r If the RNDR token contract is ever migrated to another address for\r either added security or functionality, this will need to be called.\r",
+					"params": {
+						"_newRenderTokenAddress": "see renderTokenAddress\r"
+					}
+				},
+				"disburseJob(string,address[],uint256[])": {
+					"details": "Send allowances to node(s) that performed a job\r    * This can only be called by the disbursalAddress, an accound owned\r by OTOY, and it provides the number of tokens to send to each node\r",
+					"params": {
+						"_amounts": "the amount(s) to send to each address. These must be in the same\r order as the recipient addresses\r",
+						"_jobId": "the ID of the job used in the jobBalances mapping\r",
+						"_recipients": "the address(es) of the nodes that performed rendering\r"
+					}
+				},
+				"fundJob(string,uint256)": {
+					"details": "Add RNDR tokens to a job\r    * This can only be called by a function on the RNDR token contract\r",
+					"params": {
+						"_jobId": "the ID of the job used in the jobBalances mapping\r",
+						"_tokens": "the number of tokens sent by the artist to fund the job\r"
+					}
+				},
+				"initialize(address)": {
+					"details": "The Ownable constructor sets the original `owner` of the contract to the sender account."
+				},
+				"initialize(address,address)": {
+					"details": "Initailization\r",
+					"params": {
+						"_owner": "because this contract uses proxies, owner must be passed in as a param\r",
+						"_renderTokenAddress": "see renderTokenAddress\r"
+					}
+				},
+				"isMigrated(string,string)": {
+					"details": "Returns true if the contract migration was applied.",
+					"params": {
+						"contractName": "Name of the contract.",
+						"migrationId": "Identifier of the migration."
+					},
+					"return": "true if the contract migration was applied, false otherwise."
+				},
+				"jobBalance(string)": {
+					"details": "See the tokens available for a job\r ",
+					"params": {
+						"_jobId": "the ID used to lookup the job balance\r"
+					}
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
+			"title": "Escrow\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/Escrow.sol": "Escrow"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/Escrow.sol": {
+			"keccak256": "0x5ac8c02788ff94643938c9c20ab331787756bb9f43b8e42d440df6426b38899a",
+			"urls": [
+				"bzzr://1d6308668c9b9dd4ccd3efffc5eef27ec5f4f316a66250150f2b37bcda59f472"
+			]
+		},
+		"localhost/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xd48f887d15d0411901fc331e74a25d7afa63d89a1257e8e3f43ce1b1e8f4a1e3",
+			"urls": [
+				"bzzr://09c28b5e4b9323a3675abe0d2f53d78ee30b96f20add8b9432f870df3c8e1970"
+			]
+		},
+		"localhost/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol": {
+			"keccak256": "0xa36ddb4cd5f04f0f5b7f344819267dd5500467d58949dd012a85876233c9314e",
+			"urls": [
+				"bzzr://02ed45f8a66dde083a6fae1b27a4f37605c81e3b8a26b7b16dab9537f901535c"
+			]
+		},
+		"localhost/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
+			"keccak256": "0xfbe6cfafde7eb6265c5168accc1e31b19b828ebe653439a68b6976aa52d73e31",
+			"urls": [
+				"bzzr://54b2e961fce33675e49b72ab4309350e6e0d8b2772d85732175e48a74d86050d"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/math/SafeMath.sol": {
+			"keccak256": "0xf053bc62384ddd21b4f74a98029ebb70817a64a920052529e8456f75a574acb2",
+			"urls": [
+				"bzzr://e6e26f56d60fd6b011c765d42131cc60d027bc79a753055c232702c78c1746d8"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/ownership/Ownable.sol": {
+			"keccak256": "0x7ff10635801e2d6cedfac915169414334e39841d6a4bad85822832a2589cfec4",
+			"urls": [
+				"bzzr://62c3e217f672306b6283512ac0a10de697c6b98d06a711fab45ff6eec8db8e8b"
+			]
+		},
+		"localhost/node_modules/zos-lib/contracts/migrations/Migratable.sol": {
+			"keccak256": "0xcf92552723bb484c56e77c3685271305612755511b36c4cfe488de5bf70dc19e",
+			"urls": [
+				"bzzr://be0f5e97da17338a2f7d8d15aa7361f14a359dc4e34201f37d4d331c102287b4"
+			]
+		},
+		"zos-lib/contracts/migrations/Migratable.sol": {
+			"keccak256": "0xcf92552723bb484c56e77c3685271305612755511b36c4cfe488de5bf70dc19e",
+			"urls": [
+				"bzzr://be0f5e97da17338a2f7d8d15aa7361f14a359dc4e34201f37d4d331c102287b4"
+			]
+		}
+	},
+	"version": 1
+}

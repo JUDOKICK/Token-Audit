@@ -1,0 +1,773 @@
+{
+	"compiler": {
+		"version": "0.4.24+commit.e67f0147"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "name",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "legacyToken",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "totalSupply",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transferFrom",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_escrowAddress",
+						"type": "address"
+					}
+				],
+				"name": "setEscrowContractAddress",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "decimals",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_jobID",
+						"type": "string"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "holdInEscrow",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"name": "_legacyToken",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "migrateToken",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"name": "_subtractedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "decreaseApproval",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "migrate",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "symbol",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_value",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "contractName",
+						"type": "string"
+					},
+					{
+						"name": "migrationId",
+						"type": "string"
+					}
+				],
+				"name": "isMigrated",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "migrateTokenTo",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_sender",
+						"type": "address"
+					}
+				],
+				"name": "initialize",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "escrowContractAddress",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_spender",
+						"type": "address"
+					},
+					{
+						"name": "_addedValue",
+						"type": "uint256"
+					}
+				],
+				"name": "increaseApproval",
+				"outputs": [
+					{
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"name": "_spender",
+						"type": "address"
+					}
+				],
+				"name": "allowance",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "BURN_ADDRESS",
+				"outputs": [
+					{
+						"name": "",
+						"type": "address"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "escrowContractAddress",
+						"type": "address"
+					}
+				],
+				"name": "EscrowContractAddressUpdate",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "jobId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensEscrowed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenMigration",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "spender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Approval",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Transfer",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"name": "contractName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"name": "migrationId",
+						"type": "string"
+					}
+				],
+				"name": "Migrated",
+				"type": "event"
+			}
+		],
+		"devdoc": {
+			"methods": {
+				"allowance(address,address)": {
+					"details": "Function to check the amount of tokens that an owner allowed to a spender.",
+					"params": {
+						"_owner": "address The address which owns the funds.",
+						"_spender": "address The address which will spend the funds."
+					},
+					"return": "A uint256 specifying the amount of tokens still available for the spender."
+				},
+				"approve(address,uint256)": {
+					"details": "Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.   * Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729",
+					"params": {
+						"_spender": "The address which will spend the funds.",
+						"_value": "The amount of tokens to be spent."
+					}
+				},
+				"balanceOf(address)": {
+					"details": "Gets the balance of the specified address.",
+					"params": {
+						"_owner": "The address to query the the balance of."
+					},
+					"return": "An uint256 representing the amount owned by the passed address."
+				},
+				"decreaseApproval(address,uint256)": {
+					"details": "Decrease the amount of tokens that an owner allowed to a spender.   * approve should be called when allowed[_spender] == 0. To decrement allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol",
+					"params": {
+						"_spender": "The address which will spend the funds.",
+						"_subtractedValue": "The amount of tokens to decrease the allowance by."
+					}
+				},
+				"holdInEscrow(string,uint256)": {
+					"details": "Take tokens prior to beginning a job\r    * This function is called by the artist, and it will transfer tokens\r to a separate escrow contract to be held until the job is completed\r",
+					"params": {
+						"_amount": "is the number of RNDR tokens being held in escrow\r",
+						"_jobID": "is the ID of the job used within the ORC backend\r"
+					}
+				},
+				"increaseApproval(address,uint256)": {
+					"details": "Increase the amount of tokens that an owner allowed to a spender.   * approve should be called when allowed[_spender] == 0. To increment allowed value is better to use this function to avoid 2 calls (and wait until the first transaction is mined) From MonolithDAO Token.sol",
+					"params": {
+						"_addedValue": "The amount of tokens to increase the allowance by.",
+						"_spender": "The address which will spend the funds."
+					}
+				},
+				"initialize(address)": {
+					"details": "The Ownable constructor sets the original `owner` of the contract to the sender account."
+				},
+				"initialize(address,address)": {
+					"details": "Initailization\r",
+					"params": {
+						"_owner": "because this contract uses proxies, owner must be passed in as a param\r"
+					}
+				},
+				"isMigrated(string,string)": {
+					"details": "Returns true if the contract migration was applied.",
+					"params": {
+						"contractName": "Name of the contract.",
+						"migrationId": "Identifier of the migration."
+					},
+					"return": "true if the contract migration was applied, false otherwise."
+				},
+				"migrate()": {
+					"details": "Migrates the total balance of the token holder to this token contract\rThis function will burn the old token balance and mint the same balance in the new token contract\r"
+				},
+				"migrateToken(uint256)": {
+					"details": "Migrates the given amount of old-token balance to the new token contract\rThis function will burn a given amount of tokens from the old contract and mint the same amount in the new one\r",
+					"params": {
+						"_amount": "uint256 representing the amount of tokens to be migrated\r"
+					}
+				},
+				"migrateTokenTo(address,uint256)": {
+					"details": "Burns a given amount of the old token contract for a token holder and mints the same amount of\rnew tokens for a given recipient address\r",
+					"params": {
+						"_amount": "uint256 representing the amount of tokens to be migrated\r",
+						"_to": "address the recipient that will receive the new minted tokens\r"
+					}
+				},
+				"setEscrowContractAddress(address)": {
+					"details": "Set the address of the escrow contract\r    * This will dictate the contract that will hold tokens in escrow and keep\r a ledger of funds available for jobs.\r RNDR is still in its infancy, and changes may need to be made to this\r contract and / or the escrow contract. Including methods to update the\r addresses allows the contracts to update independently.\r If the escrow contract is ever migrated to another address for\r either added security or functionality, this will need to be called.\r",
+					"params": {
+						"_escrowAddress": "see escrowContractAddress\r"
+					}
+				},
+				"totalSupply()": {
+					"details": "total number of tokens in existence"
+				},
+				"transfer(address,uint256)": {
+					"details": "transfer token for a specified address",
+					"params": {
+						"_to": "The address to transfer to.",
+						"_value": "The amount to be transferred."
+					}
+				},
+				"transferFrom(address,address,uint256)": {
+					"details": "Transfer tokens from one address to another",
+					"params": {
+						"_from": "address The address which you want to send tokens from",
+						"_to": "address The address which you want to transfer to",
+						"_value": "uint256 the amount of tokens to be transferred"
+					}
+				},
+				"transferOwnership(address)": {
+					"details": "Allows the current owner to transfer control of the contract to a newOwner.",
+					"params": {
+						"newOwner": "The address to transfer ownership to."
+					}
+				}
+			},
+			"title": "RenderToken\r"
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"localhost/contracts/RenderToken.sol": "RenderToken"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"localhost/contracts/Escrow.sol": {
+			"keccak256": "0x5ac8c02788ff94643938c9c20ab331787756bb9f43b8e42d440df6426b38899a",
+			"urls": [
+				"bzzr://1d6308668c9b9dd4ccd3efffc5eef27ec5f4f316a66250150f2b37bcda59f472"
+			]
+		},
+		"localhost/contracts/MigratableERC20.sol": {
+			"keccak256": "0x625b2059e9c4e2c804410e2f87d1eac0538ee5d1f7cd0caff42757af22b2cdee",
+			"urls": [
+				"bzzr://be2551d8349a7c436d37212d88de4b9fc2e0449856da7c52cdadb4d83250d968"
+			]
+		},
+		"localhost/contracts/RenderToken.sol": {
+			"keccak256": "0x30439a89281dffde477167b275748397fa38f369028d620d1aabe665494b81a6",
+			"urls": [
+				"bzzr://c16e56e2eda901890c1a819e056e91e33596faab0a53e2dd0fb7791d4f68535e"
+			]
+		},
+		"localhost/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xd48f887d15d0411901fc331e74a25d7afa63d89a1257e8e3f43ce1b1e8f4a1e3",
+			"urls": [
+				"bzzr://09c28b5e4b9323a3675abe0d2f53d78ee30b96f20add8b9432f870df3c8e1970"
+			]
+		},
+		"localhost/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol": {
+			"keccak256": "0xa36ddb4cd5f04f0f5b7f344819267dd5500467d58949dd012a85876233c9314e",
+			"urls": [
+				"bzzr://02ed45f8a66dde083a6fae1b27a4f37605c81e3b8a26b7b16dab9537f901535c"
+			]
+		},
+		"localhost/node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol": {
+			"keccak256": "0xfbe6cfafde7eb6265c5168accc1e31b19b828ebe653439a68b6976aa52d73e31",
+			"urls": [
+				"bzzr://54b2e961fce33675e49b72ab4309350e6e0d8b2772d85732175e48a74d86050d"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/math/SafeMath.sol": {
+			"keccak256": "0xf053bc62384ddd21b4f74a98029ebb70817a64a920052529e8456f75a574acb2",
+			"urls": [
+				"bzzr://e6e26f56d60fd6b011c765d42131cc60d027bc79a753055c232702c78c1746d8"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/ownership/Ownable.sol": {
+			"keccak256": "0x7ff10635801e2d6cedfac915169414334e39841d6a4bad85822832a2589cfec4",
+			"urls": [
+				"bzzr://62c3e217f672306b6283512ac0a10de697c6b98d06a711fab45ff6eec8db8e8b"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/token/ERC20/BasicToken.sol": {
+			"keccak256": "0xfb98c0ac0e5a7af247bf4502db7e16e08535d6c6c236c8e9ef36687d70e5351e",
+			"urls": [
+				"bzzr://085d284da1893df1137d0b9d4bc2dd1483c6635f523f954b55486fc93740431b"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xebd8d5da910e7dddae936c0b132a2ff39b84f53f0c228871e9b5ecdba5fa63ba",
+			"urls": [
+				"bzzr://4e524bc48b6d1257a259a43b5f7e606a9bd14d15ad305ade1037066b38a0ac02"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/token/ERC20/ERC20Basic.sol": {
+			"keccak256": "0x31e283cd96967380623dd1a37a33ed463454a6059f068e9ed318a0ec504f095b",
+			"urls": [
+				"bzzr://88955599dc0d27c8ce845171915d17536fd996c1e253a6572617112531f7cbcc"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/token/ERC20/SafeERC20.sol": {
+			"keccak256": "0x61bc579717f87ba2dc48a9d50ee7089de503866b3e7126ca3bdba4359cbc842c",
+			"urls": [
+				"bzzr://9389a1ffe89652e1d69199bfdaa3bab83a1a3b7c2836ebf1cba6c83e69ca6e25"
+			]
+		},
+		"localhost/node_modules/openzeppelin-zos/contracts/token/ERC20/StandardToken.sol": {
+			"keccak256": "0xbfc4e38c90a204dd03ed329309fada520ce8f6ba90c07625f507d3a5442ec933",
+			"urls": [
+				"bzzr://927b7194ab049050b910de5e856716a326411665a487b9df38b8c016e3c33f09"
+			]
+		},
+		"localhost/node_modules/zos-lib/contracts/migrations/Migratable.sol": {
+			"keccak256": "0xcf92552723bb484c56e77c3685271305612755511b36c4cfe488de5bf70dc19e",
+			"urls": [
+				"bzzr://be0f5e97da17338a2f7d8d15aa7361f14a359dc4e34201f37d4d331c102287b4"
+			]
+		},
+		"zos-lib/contracts/migrations/Migratable.sol": {
+			"keccak256": "0xcf92552723bb484c56e77c3685271305612755511b36c4cfe488de5bf70dc19e",
+			"urls": [
+				"bzzr://be0f5e97da17338a2f7d8d15aa7361f14a359dc4e34201f37d4d331c102287b4"
+			]
+		}
+	},
+	"version": 1
+}
