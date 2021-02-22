@@ -2,10 +2,12 @@
   "manifestVersion": "2.2",
   "contracts": {
     "RenderToken": "RenderToken",
-    "Escrow": "Escrow"
+    "Escrow": "Escrow",
+	"EscrowMatic": "EscrowMatic",
+	"RenderTokenMatic": "RenderTokenMatic"
   },
   "dependencies": {},
-  "name": "render-token-legacy",
+  "name": "rndr",
   "version": "1.0.0",
   "compiler": {
     "compilerSettings": {

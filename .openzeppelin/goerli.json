@@ -191,14 +191,14 @@
   },
   "solidityLibs": {},
   "proxies": {
-    "render-token-legacy/LegacyToken": [
+    "rndr/LegacyToken": [
       {
         "address": "0x3cAa582713F80C9DAAf517FaAd80E439B5bC1249",
         "kind": "NonProxy",
         "bytecodeHash": "322a78d1fe36d55d447979ec4539b93722d8567b01e95b662741a8a4ad60151d"
       }
     ],
-    "render-token-legacy/RenderToken": [
+    "rndr/RenderToken": [
       {
         "address": "0x52D238538317D2af59227579bc62abf6EC8C8Fa1",
         "version": "1.0.0",
@@ -207,7 +207,7 @@
         "kind": "Upgradeable"
       }
     ],
-    "render-token-legacy/Escrow": [
+    "rndr/Escrow": [
       {
         "address": "0x5f4dD4ff5D01d766dDcAA00210B777AAffC08299",
         "version": "1.0.0",
