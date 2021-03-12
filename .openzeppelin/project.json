@@ -3,8 +3,8 @@
   "contracts": {
     "RenderToken": "RenderToken",
     "Escrow": "Escrow",
-	"EscrowMatic": "EscrowMatic",
-	"RenderTokenMatic": "RenderTokenMatic"
+    "EscrowMatic": "EscrowMatic",
+    "RenderTokenMatic": "RenderTokenMatic"
   },
   "dependencies": {},
   "name": "rndr",

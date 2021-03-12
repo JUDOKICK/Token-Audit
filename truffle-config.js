@@ -22,7 +22,26 @@ module.exports = {
 	goerli:  {
       provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/${infuraApiKey}`),
       network_id: 5
+    },
+	matic: {
+      provider: () => new HDWalletProvider(
+        mnemonic, 'https://rpc-mumbai.maticvigil.com/'
+        , 0, 10),
+      network_id: 80001
+    },
+	mumbai: {
+      provider: () => new HDWalletProvider(
+        mnemonic, 'https://rpc-mainnet.matic.network/'
+        , 0, 10),
+      network_id: 137
+    },
+	mainnet: {
+      provider: () => new HDWalletProvider(
+        mnemonic, `https://mainnet.infura.io/v3/${projectId}`
+        ,0 , 10),
+      network_id: 1
     }
+	
   },
   compilers: {
     solc: {
