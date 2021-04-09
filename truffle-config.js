@@ -53,6 +53,16 @@ module.exports = {
         ,0 , 10),
       network_id: 1
     }
-	
+  },
+  compilers: {
+    solc: {
+      version: "0.4.24",    // Fetch exact version from solc-bin (default: truffle's version)
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 999999   // Optimize for how many times you intend to run the code
+        }
+      }
+    }
   }
 };
