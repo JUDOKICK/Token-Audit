@@ -12,3 +12,7 @@ zos.development.json
 secrets.json
 
 package-lock.json
+
+scripts/contract.js
+
+contracts/EscrowMaticFlat.sol

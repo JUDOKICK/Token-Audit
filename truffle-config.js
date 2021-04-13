@@ -23,13 +23,13 @@ module.exports = {
       provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/${infuraApiKey}`),
       network_id: 5
     },
-	matic: {
+	mumbai: {
       provider: () => new HDWalletProvider(
         mnemonic, 'https://rpc-mumbai.maticvigil.com/'
         , 0, 10),
       network_id: 80001
     },
-	mumbai: {
+	matic: {
       provider: () => new HDWalletProvider(
         mnemonic, 'https://rpc-mainnet.matic.network/'
         , 0, 10),
