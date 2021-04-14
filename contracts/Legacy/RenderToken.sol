@@ -2,10 +2,10 @@ pragma solidity 0.4.24;
 
 // Escrow constract
 import { Escrow } from "./Escrow.sol";
-import { Migratable } from "../node_modules/zos-lib/contracts/migrations/Migratable.sol";
+import { Migratable } from "../../node_modules/zos-lib/contracts/migrations/Migratable.sol";
 import { MigratableERC20 } from "./MigratableERC20.sol";
-import { Ownable } from "../node_modules/openzeppelin-zos/contracts/ownership/Ownable.sol";
-import { StandardToken } from "../node_modules/openzeppelin-zos/contracts/token/ERC20/StandardToken.sol";
+import { Ownable } from "../../node_modules/openzeppelin-zos/contracts/ownership/Ownable.sol";
+import { StandardToken } from "../../node_modules/openzeppelin-zos/contracts/token/ERC20/StandardToken.sol";
 
 /**
  * @title RenderToken

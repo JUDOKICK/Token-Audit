@@ -1,9 +1,9 @@
 pragma solidity 0.4.24;
 
-import { ERC20, SafeERC20 } from "../node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
-import { Migratable } from "../node_modules/zos-lib/contracts/migrations/Migratable.sol";
-import { Ownable } from "../node_modules/openzeppelin-zos/contracts/ownership/Ownable.sol";
-import { SafeMath } from "../node_modules/openzeppelin-zos/contracts/math/SafeMath.sol";
+import { ERC20, SafeERC20 } from "../../node_modules/openzeppelin-solidity/contracts/token/ERC20/SafeERC20.sol";
+import { Migratable } from "../../node_modules/zos-lib/contracts/migrations/Migratable.sol";
+import { Ownable } from "../../node_modules/openzeppelin-zos/contracts/ownership/Ownable.sol";
+import { SafeMath } from "../../node_modules/openzeppelin-zos/contracts/math/SafeMath.sol";
 
 /**
  * @title Escrow
