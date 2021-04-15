@@ -1,7 +1,7 @@
 const { BN } = web3.utils;
 const { abi } = web3.eth;
-const Escrow = artifacts.require('Escrow');
-const RenderToken = artifacts.require('RenderToken');
+const Escrow = artifacts.require('EscrowMatic');
+const RenderToken = artifacts.require('RenderTokenMatic');
 const { deployProxy } = require('@openzeppelin/truffle-upgrades');
 
 require('chai')
@@ -13,7 +13,7 @@ require('chai')
 const name = "RenderToken";
 const symbol = "RNDR";
 
-contract('Render Token ', (accounts) => {
+contract('Render Token', (accounts) => {
   const owner = accounts[0];
   const childChainManagerProxy = accounts[1];
 

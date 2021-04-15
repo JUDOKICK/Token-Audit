@@ -10,6 +10,7 @@ zos.development.json
 .idea/
 
 secrets.json
+secrets.js
 
 package-lock.json
 

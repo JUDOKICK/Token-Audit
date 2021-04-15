@@ -1,7 +1,7 @@
 pragma solidity 0.4.24;
 
-import { MintableToken } from "../node_modules/openzeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
-import { DetailedERC20 } from "../node_modules/openzeppelin-solidity/contracts/token/ERC20/DetailedERC20.sol";
+import { MintableToken } from "../../node_modules/openzeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
+import { DetailedERC20 } from "../../node_modules/openzeppelin-solidity/contracts/token/ERC20/DetailedERC20.sol";
 
 contract LegacyToken is MintableToken, DetailedERC20 {
   uint256 private constant INITIAL_SUPPLY = 536870912000000000000000000;
