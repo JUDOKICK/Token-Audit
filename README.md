@@ -52,3 +52,31 @@ And then it will try to disburse RNDR from each `jobId` to the `TargetAddress` i
 If something goes wrong (not high enough gas price or Infura error) - you can run the step 7 again and if will skip the `jobId`'s that have already been disbursed and have `0` balance.
 
 After all the tokens are on the `TargetAddress` (which should be a multisig or Ledger account - well protected) - you can transfer them to the Matic L2 chain using their PoS Bridge - to a similar single address - that will be used as a disbursor to load them up to Matic L2 Escrow using the Stage 2 script.
+
+# L2 Escrowing of Matic tokens
+
+0. For testing run:
+
+    `truffle migrate --reset --compiler=none`
+
+    then
+
+    `truffle exec scripts/2_fundMockMatic.js --network development --compiler=none`
+
+1. For the real thing - you need to run the L1->L2 part above first - because you need to have `JobIdsWithBalances.csv` file ready with all the jobIds and balances
+
+2. To push all balances to userIds of new EscrowMatic run:
+
+    `truffle exec scripts/3_pushToNewEscrow.js --network development --compiler=none`
+
+    It will automatically check if the balance already exists, and skips if it does. So you can run it many times if it fails - it will continue where it stopped
+
+3. To verify if everything went smoothly and balances had been escrowed correctly run:
+
+    `truffle exec scripts/4_verifyNewEscrow.js --network development --compiler=none`
+
+    It will compare all onChain balances to the ones from `JobIdsWithBalances.csv` and output two files:
+
+    `MaticEscrowBalances.csv` - with onChainBalances
+
+    `MaticEscrowNotMatchingBalances.csv` - with any of the balances that do not match

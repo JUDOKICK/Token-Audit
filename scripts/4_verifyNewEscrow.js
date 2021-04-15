@@ -47,7 +47,7 @@ module.exports = async deployer => {
       escrow = await Escrow.at(addresses["EscrowMatic"])
       
       let matching = [`jobId,balance`]
-      let notMatching = [`jobId,balance`]
+      let notMatching = [`jobId,balanceOnChain,balanceShouldBe`]
 
       for (let i=0; i<jobIds.length; i++) {
         onChainBalance = await escrow.userBalance(jobIds[i]);
@@ -57,7 +57,7 @@ module.exports = async deployer => {
           matching.push(`${jobIds[i]},${balances[i].toString()}`)
         } else {
           console.log(`Doesn't match: ${jobIds[i]}: ${fromWei(onChainBalance)} RNDR (should be: ${fromWei(balances[i])})`)
-          notMatching.push(`${jobIds[i]},${balances[i].toString()}`)
+          notMatching.push(`${jobIds[i]},${fromWei(onChainBalance)},${balances[i].toString()}`)
         }
       }
 
