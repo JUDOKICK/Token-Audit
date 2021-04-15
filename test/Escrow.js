@@ -1,7 +1,7 @@
 const { BN, fromWei, toWei } = web3.utils;
 const { abi } = web3.eth;
-const Escrow = artifacts.require('Escrow');
-const RenderToken = artifacts.require('RenderToken');
+const Escrow = artifacts.require('EscrowMatic');
+const RenderToken = artifacts.require('RenderTokenMatic');
 const { deployProxy } = require('@openzeppelin/truffle-upgrades');
 
 require('chai')

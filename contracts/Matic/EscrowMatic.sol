@@ -12,7 +12,7 @@ import "@openzeppelin/contracts-upgradeable/math/SafeMathUpgradeable.sol";
  * This contract holds tokens while render jobs are being completed
  * and information on token allottment per user
  */
-contract Escrow is OwnableUpgradeable {
+contract EscrowMatic is OwnableUpgradeable {
   using SafeERC20Upgradeable for IERC20Upgradeable;
   using SafeMathUpgradeable for uint256;
 
