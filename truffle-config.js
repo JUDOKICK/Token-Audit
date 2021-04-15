@@ -1,7 +1,8 @@
+
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const infuraApiKey = require('./secrets').infuraApiKey;
 const mnemonic = require('./secrets').mnemonic;
 const privateKey = require('./secrets').privateKey;
+const infuraApiKey = require('./secrets').projectId;
 
 module.exports = {
   networks: {
@@ -14,18 +15,6 @@ module.exports = {
       host: 'localhost',
       port: 9545,
       network_id: '*'
-    },
-    mainnet: {
-      provider: () => new HDWalletProvider({privateKeys: [privateKey],
-          providerOrUrl: `https://kovan.infura.io/v3/${infuraApiKey}`}),
-      gasPrice: 50000000000,
-      network_id: 42
-    },
-    kovan: {
-      provider: () => new HDWalletProvider({privateKeys: [privateKey],
-          providerOrUrl: `https://kovan.infura.io/v3/${infuraApiKey}`}),
-      gasPrice: 50000000000,
-      network_id: 42
     },
     ropsten:  {
       provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/${infuraApiKey}`),
@@ -54,5 +43,17 @@ module.exports = {
       network_id: 1
     }
 	
+  },
+  compilers: {
+    solc: {
+      version: "0.4.24",    // Fetch exact version from solc-bin (default: truffle's version)
+      settings: {
+        optimizer: {
+          enabled: true,
+          runs: 9999,   // Optimize for how many times you intend to run the code
+          }
+      }
+    }
   }
+
 };
