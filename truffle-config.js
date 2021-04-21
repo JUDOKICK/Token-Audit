@@ -18,17 +18,20 @@ module.exports = {
     },
     ropsten:  {
       provider: () => new HDWalletProvider(mnemonic, `https://ropsten.infura.io/v3/${infuraApiKey}`),
-      network_id: 3
+      network_id: 3,
+      gasPrice: 10e9
     },
 	goerli:  {
-      provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/${infuraApiKey}`),
-      network_id: 5
+      provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/v3/${infuraApiKey}`),
+      network_id: 5,
+      gasPrice: 10e9
     },
 	mumbai: {
       provider: () => new HDWalletProvider(
         mnemonic, 'https://rpc-mumbai.maticvigil.com/'
         , 0, 10),
-      network_id: 80001
+      network_id: 80001,
+      gasPrice: 10e9
     },
 	matic: {
       provider: () => new HDWalletProvider(
@@ -42,7 +45,7 @@ module.exports = {
         ,0 , 10),
       network_id: 1
     }
-	
+
   },
   compilers: {
     solc: {
